@@ -4,12 +4,17 @@
     @if(count($todos) > 0)
         @foreach($todos as $todo)
             <div class="jumbotron">
-                <h3>{{ $todo->text }} <span class="label label-danger">
-                    {{ $todo->due }}
-                </span>
+                <h3>
+                    <a href="todo/{{ $todo->id }}">
+                    {{ $todo->text }}
+                    <span class="label label-danger">
+                        {{ $todo->due }}
+                    </span>
+                    </a>
                 </h3>
 
             </div>
+            <hr>
         @endforeach
     @endif
 @endsection
