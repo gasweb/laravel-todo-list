@@ -9,7 +9,7 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('todo/create') ? 'active' : '' }}" href="todo/create">Create</a>
+                    <a class="nav-link {{ Request::is('todo/create') ? 'active' : '' }}" href="/todo/create">Create</a>
                 </li>
             </ul>
         </div>
