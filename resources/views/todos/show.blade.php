@@ -5,4 +5,6 @@
     <p>
         {{ $todo->body }}
     </p>
+    <hr>
+    <a href="/todo/{{$todo->id}}/edit" class="btn btn-default">Edit</a>
 @endsection
