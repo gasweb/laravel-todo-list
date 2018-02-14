@@ -15,6 +15,8 @@ class FormServiceProvider extends ServiceProvider
     public function boot()
     {
         Form::component('bsText', 'components.form.text', ['name', 'value', 'attributes']);
+        Form::component('bsTextArea', 'components.form.textarea', ['name', 'value', 'attributes']);
+        Form::component('bsTextSubmit', 'components.form.submit', ['value' => 'Submit', 'attributes']);
     }
 
     /**
